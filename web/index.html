@@ -12,7 +12,7 @@
     <meta property="og:url" content="https://4k.bleach.dev/">
     <meta property="og:image" content="https://bleach.dev/static/icon.png">
     <meta property="og:type" content="website">
-    <meta property="og:description" content="Minecraft 4K Online Multiplayer trolling edition">
+    <meta property="og:description" content="Minecraft 4K Revised by ShadowWolf">
     <meta name="theme-color" content="#ebafcc">
 
     <link rel="shortcut icon" type="image/x-icon" href="https://bleach.dev/static/icon.ico">
@@ -30,7 +30,7 @@
             top: 0;
             width: 100%;
             height: 100%;
-            image-rendering: pixelated;
+            image-rendering: pixelated ;
         }
 
         .center {
@@ -85,18 +85,23 @@
 <div id="menu">
     <div class="center">
         <h3>Minecraft 4K Multiplayer</h3>
-        <input id="ip" type="text" placeholder="Room Code" autofocus>
-        <button onclick="roomCode = document.getElementById('ip').value; join();">Join</button>
-        <button onclick="roomCode = randomId(); host();">Host</button>
+        <input id="ip" type="text" placeholder="Join Code" autofocus>
+        <button onclick="roomCode = document.getElementById('ip').value; join();">Join Room</button>
+        <button onclick="roomCode = randomId(); host();">Host Room</button>
     </div>
     <div class="bottom-left">
-        <p class="control-text">Controls:</p>
+        <p class="control-text">The Controls:</p>
         <p class="control-text"><b>WASD</b> Move</p>
         <p class="control-text"><b>Space</b> Jump</p>
         <p class="control-text"><b>LMB</b> Mine Block</p>
         <p class="control-text"><b>RMB</b> Place Block</p>
-        <p class="control-text"><b>1-7</b> Select Block</p>
+        <p class="control-text"><b>1-7</b> Blocks</p>
     </div>
+	</div>
+    <div class="bottom-right">
+	    <p> Original Creator BleachDev</p>
+	    <p> Remastered by ShadowWolf</p>
+    </div> 
     <div class="bottom-right">
         <a class="color-link" href="https://github.com/BleachDev/4k-mp"><img src="https://bleach.dev/static/img/logos/github.svg" width="32"></a>
     </div>
@@ -113,7 +118,7 @@
         // 1: GRASS
         // 2: DIRT
         // 3: STONE
-        // 4: BRICK
+        // 4: BRICKS
         // 5: LOG
         // 6: LEAVES
         const texturePixels = new Uint32Array(196608/*256x16x48*/);
